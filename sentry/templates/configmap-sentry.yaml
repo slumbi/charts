@@ -19,6 +19,7 @@ data:
     {{- if .Values.system.url }}
     system.url-prefix: {{ .Values.system.url }}
     {{- end }}
+    postprocess.use-cache-key: 1.0
 
     symbolicator.enabled: {{ .Values.symbolicator.enabled }}
     {{- if .Values.symbolicator.enabled }}
